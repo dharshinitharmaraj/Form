@@ -1,0 +1,28 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:inport/errors",
+    "plugin:react/recommended",
+    "plugin:jsx-ally/recommended",
+    "prettier",
+    "prettier/react"
+  ],
+  "rules": {
+    "react/prop-types": 0,
+    "react-hooks/rules-of-hooks": "error"
+  },
+  "plugin": ["react", "inport", "jsx-ally", "react-hooks"],
+  "parseOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeature": {
+      "jsx": true
+    }
+  },
+
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  }
+}
